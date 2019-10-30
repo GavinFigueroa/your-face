@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Test</title>
+<script type="text/javascript">
+  var imageURLs = [
+       "faces/face1.jpeg"
+     , "faces/face2.jpg"
+     , "faces/face3.jpg"
+  ];
+  function getRandomImage() {
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    return imageURLs[randomIndex];
+  }
+  document.body.style.backgroundImage = "url('face1.png')";
+</script>
+</head>
+<body>
+<script type="text/javascript">
+  document.body.style.backgroundImage = "url('" + getRandomImage() + "')";
+</script>
+</body>
+</html>
